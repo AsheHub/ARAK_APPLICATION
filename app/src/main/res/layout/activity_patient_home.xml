@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4598C8ED">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#45D9ECFA"
+            android:orientation="vertical"
+            tools:context=".HomeScreen">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context=".HomeScreen">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Hello"
+                    android:textColor="#BA000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/helloName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#BA000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#D1EEFE"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="132dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/homepage" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#D1EEFC"
+                        android:orientation="vertical"
+                        android:padding="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Book Now"
+                            android:textColor="#BA000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="181dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:gravity="left"
+                            android:text="Free dental treatment"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="SERVICES"
+                android:textColor="#BA000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnViewAvailableDates"
+                    android:layout_width="115dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#67B3FA"
+                    android:drawableTop="@drawable/book"
+                    android:scaleType="fitCenter"
+                    android:text="Book\nAppointment"
+                    android:textSize="12dp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/myAppointments"
+                    android:layout_width="115dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="12dp"
+                    android:backgroundTint="#67B3FA"
+                    android:drawableTop="@drawable/date"
+                    android:scaleType="fitCenter"
+                    android:text="My\nAppointment"
+                    android:textSize="12dp"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/myReport"
+                    android:layout_width="115dp"
+                    android:layout_height="110dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="12dp"
+                    android:backgroundTint="#67B3FA"
+                    android:drawableTop="@drawable/paper"
+                    android:scaleType="fitCenter"
+                    android:text="My\nReport"
+                    android:textSize="12dp"
+                    app:cornerRadius="20dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/upcomingAppointmentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPCOMING APPOINTMENT"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#BA000000"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewUpcomingAppointments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+        </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"
+        />
+
+</RelativeLayout>

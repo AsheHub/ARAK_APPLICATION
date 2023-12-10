@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Doctor_View</string>
+    <string-array name="universities_array">
+        <item>Jeddah University</item>
+        <item>King Abdulaziz University</item>
+        <item>Btterjee Medical College</item>
+    </string-array>
+
+
+    <string name="Chronic_Diseases">Chronic Diseases</string>
+    <string-array name="Chronic_Diseases">
+        <item>Nothing</item>
+        <item>Diabetes Disease</item>
+        <item>Heart Disease</item>
+        <item>Asthma</item>
+        <item>Anemia</item>
+        </string-array>
+    <string name="university_spinner_description">Select University</string>
+
+    <string-array name="health_care_array">
+        <item>University Hospital at King Abdulaziz University</item>
+        <item>National Guard Hospital</item>
+    </string-array>
+
+    <string name="ADD">Add Time</string>
+    <string name="SelectedTimes">Selected Times:</string>
+
+    <string name="SaveSchedule">Save Schedule</string>
+    <string name="content_description_my_appointments">View My Appointments</string>
+
+</resources>

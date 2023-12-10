@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Detailed_Appointments_Completed_Info_Activity">
+    <!-- Replace this with your actual layout content -->
+
+    <TextView
+        android:id="@+id/patientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:textSize="18sp"
+
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/patientBirthdayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientNameTextView"
+        android:layout_marginTop="8dp"
+        android:text="Patient Birthday"/>
+
+    <TextView
+        android:id="@+id/patientEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientBirthdayTextView"
+        android:layout_marginTop="8dp"
+        android:text="Patient Email"/>
+
+    <TextView
+        android:id="@+id/patientGenderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientEmailTextView"
+        android:layout_marginTop="8dp"
+        android:text="Patient Gender"/>
+
+    <TextView
+        android:id="@+id/appointmentDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientGenderTextView"
+        android:layout_marginTop="8dp"
+        android:text="Appointment Details"/>
+
+
+    <ListView
+        android:id="@+id/appointmentsCompletedListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/patientGenderTextView"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

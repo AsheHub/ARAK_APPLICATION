@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!-- reserved_appointment_item.xml -->
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="45dp"
+        android:backgroundTint="#D1EEFC"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="377dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:orientation="vertical"
+            android:paddingRight="20dp">
+    <TextView
+        android:id="@+id/appointmentItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:text="Appointment Info" />
+
+        <Button
+        android:id="@+id/cancelButton"
+        app:cardCornerRadius="100dp"
+        android:backgroundTint="#73C4EC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="110dp"
+         android:layout_marginBottom="5dp"
+        android:text="Cancel" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

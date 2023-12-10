@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bookedAppointmentColor">#7A7676</color>
+    <color name="bookedAppointmentTextColor">#F19E9E</color> <!-- Red color as an example -->
+    <color name="availableAppointmentTextColor">#A4E3DD</color>
+        <color name="colorRed">#FF0000</color>
+        <color name="colorBabyBlue">#87CEFA</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#70C4EF</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#8662ACE6</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="startblue">#76D1FF</color>
+    <color name="endblue">#99DCFD</color>
+
+
+    <color name="colorPrimaryOne">#70C4EF</color>
+    <color name="your_primary_color">#8662ACE6</color>
+    <color name="your_primary_dark_color">#FF018786</color>
+    <color name="your_accent_color">#67B3FA</color>
+    <color name="your_text_color">#72BFDD</color>
+    <color name="your_secondary_text_color">#757575</color>
+</resources>

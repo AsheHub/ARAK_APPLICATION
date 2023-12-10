@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="720dp"
+    android:background="@drawable/arak"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="430dp"
+            android:hint="Enter your email"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background"
+            />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:hint="Enter password"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background" />
+
+
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#67B3FA"
+            app:cornerRadius = "20dp"
+            android:text="signIn" />
+
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Not yet registered? Sign Up Now"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#D8000000"
+                />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/PatientSignUp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#67B3FA"
+                app:cornerRadius = "20dp"
+                android:text="Patient"
+                android:onClick="onSendSignUpPatient"
+
+                />
+
+            <Button
+                android:id="@+id/doctorSignUp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="Doctor"
+                android:backgroundTint="#67B3FA"
+                app:cornerRadius = "20dp"
+                android:onClick="onSendSignUp"/>
+
+        </LinearLayout>
+</LinearLayout>
+

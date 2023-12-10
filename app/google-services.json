@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594518808107",
+    "project_id": "dectorview",
+    "storage_bucket": "dectorview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594518808107:android:9f0367210a86c3d8c6bc6e",
+        "android_client_info": {
+          "package_name": "com.example.doctor_view"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrtYwOtERBQWOLryr5Yktc5ng6qvBugbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

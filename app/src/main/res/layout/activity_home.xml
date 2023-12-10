@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4598C8ED"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".HomeScreen"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello!"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#BA000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="#D1EEFE"
+            >
+
+            <ImageView
+                android:layout_width="152dp"
+                android:layout_height="125dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/homepage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#D1EEFC"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left"
+                    android:text="My schedule "
+                    android:textColor="#BA000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="SERVICES"
+        android:textColor="#BA000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonMakeSchedule"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:text="scheduling"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            app:cornerRadius = "20dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="#67B3FA"
+            android:drawableTop="@drawable/book"
+            />
+
+        <Button
+            android:id="@+id/buttonAppointment"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:text="Appointment"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            app:cornerRadius = "20dp"
+            android:drawableTop="@drawable/scheduling"
+            android:backgroundTint="#67B3FA"
+            />
+
+
+        <Button
+            android:id="@+id/buttonPatient"
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:text="Patients"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            app:cornerRadius = "20dp"
+            android:backgroundTint="#67B3FA"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/paitents"
+            />
+
+
+    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/upcomingAppointmentInfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPCOMING APPOINTMENT"
+                android:textSize="24sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#BA000000"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewUpcomingAppointments1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/view_menu" />
+
+</LinearLayout>
